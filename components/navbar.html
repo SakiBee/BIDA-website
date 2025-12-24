@@ -1,0 +1,48 @@
+<div id="search-page" class="search-overlay">
+  <button class="close-btn" onclick="toggleSearch()">×</button>
+  <div class="search-content">
+    <h1>Search Our App</h1>
+    <input type="text" placeholder="Type to search..." />
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+  <div class="nav-left">
+    <img
+      width="170"
+      height="35"
+      src="https://mdhasnaeenrizvir17.sg-host.com/wp-content/uploads/2024/10/BIDA-Logo-2.png"
+      class="attachment-full size-full wp-image-33"
+      alt="Logo"
+    />
+  </div>
+
+  <div class="nav-center">
+    <ul class="nav-links" id="navLinks">
+      <li class="nav-item"><a href="#">Home</a></li>
+      <li class="nav-item dropdown">
+        <a href="#">Services ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Dev</a></li>
+          <li><a href="#">Marketing</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="#">Portfolio</a></li>
+      <li class="nav-item"><a href="#">About</a></li>
+      <li class="nav-item"><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="lang-switcher">
+      <select id="lang-select" class="lang-dropdown">
+        <option value="en" selected>English</option>
+        <option value="bn">Bangla</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="nav-right">
+    <button class="search-btn" onclick="toggleSearch()">🔍</button>
+  </div>
+</nav>

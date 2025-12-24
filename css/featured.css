@@ -1,0 +1,157 @@
+.featured-section {
+  padding: 60px 20px;
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-outer-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  position: relative;
+}
+
+.featured-slider {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  gap: 0; /* Cards take full container width for slider logic */
+}
+
+.featured-card {
+  min-width: 100%;
+  display: flex;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  /* Restored Shadow from original */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-left {
+  flex: 1;
+}
+
+.card-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-right {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.place-name {
+    font-family: "Plus Jakarta Sans", Sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.3em;
+    margin-bottom: 5px;
+    color: #0DA665;
+}
+
+/* Restored Typography from original */
+.card-right h2 {
+  font-size: 2.5rem;
+  color: #444746;
+  margin-bottom: 20px;
+}
+
+.card-right p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.feature-link {
+  display: inline-block;
+  width: fit-content;
+  padding: 12px 30px;
+  background: #444746;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.feature-link:hover {
+  background: #90ee90;
+  color: #444746;
+}
+
+/* Navigation Arrows (Restored hover effects) */
+.nav-arrow {
+  background: white;
+  border: 1px solid #ddd;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.left-arrow {
+  left: -25px;
+}
+.right-arrow {
+  right: -25px;
+}
+
+.nav-arrow:hover {
+  background: #90ee90;
+  border-color: #90ee90;
+}
+
+/* Dots Styling */
+.dots-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.dot.active {
+  background: #444746;
+  transform: scale(1.3);
+}
+
+@media (max-width: 768px) {
+  .featured-card {
+    flex-direction: column;
+  }
+
+  .card-right {
+    padding: 30px;
+  }
+
+  .card-right h2 {
+    font-size: 1.8rem;
+  }
+
+  .nav-arrow {
+    width: 40px;
+    height: 40px;
+  }
+}
