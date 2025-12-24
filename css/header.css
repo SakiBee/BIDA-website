@@ -159,12 +159,27 @@
   border: none;
   cursor: pointer;
 }
-.lang-dropdown {
-  padding: 3px;
-  border-radius: 5px;
-  background-color: #b29f9f;
+
+/* .lang-switcher{
+  width: 100%;
+} */
+.lang-switcher {
+ display: flex;
+ justify-content: center;
+  margin: 0 auto;
+  
+  
   font-weight: bold;
   font-family: sans-serif;
+}
+.lang-dropdown{
+  padding:3px 6px;
+  color: white;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.lang-dropdown > * {
+  background-color: wheat;
 }
 @media (max-width: 768px) {
   .menu-toggle {
