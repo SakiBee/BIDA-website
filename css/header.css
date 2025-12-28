@@ -43,6 +43,10 @@
   transition: transform 0.3s ease-out;
 }
 
+.nav-item a:hover {
+  color: #A3E96C;
+}
+
 .nav-item a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
@@ -190,20 +194,23 @@
  display: flex;
  justify-content: center;
   margin: 0 auto;  
-  font-weight: bold;
-  font-family: sans-serif;
 }
 
 .lang-dropdown{
   padding:3px 6px;
   color: white;
   border-radius: 5px;
+  border: none;
+  margin-top: 5px;
   background-color: transparent;
 }
 .lang-dropdown > * {
   background-color: wheat;
   color: black;
+  font-weight: bold;
+  font-family: sans-serif;
 }
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
